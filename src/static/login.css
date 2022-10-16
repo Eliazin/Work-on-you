@@ -1,0 +1,352 @@
+/* Login Screen */
+body{
+position: relative;
+width: 100vw;
+height: 100vh;
+
+background: #C3E8BD;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* Rectangle 1 */
+
+div.ret1{
+position: absolute;
+width: 1008px;
+height: 731px;
+left: calc(50% - 1008px/2);
+top: 166px;
+
+background: #EFCAEB;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 16px;
+}
+
+/* Rectangle 2 */
+
+div.ret2{
+position: absolute;
+width: 603px;
+height: 404px;
+left: 630px;
+top: 310px;
+
+background: #FDFBFB;
+border-radius: 16px;
+}
+
+/* Rectangle 8 */
+
+input.ret8{
+box-sizing: border-box;
+
+position: absolute;
+width: 204px;
+height: 50px;
+left: 370px;
+top: 300px;
+
+font-size: 24px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: bold;
+background: #F2D4EF;
+border: 3px solid #000000;
+border-radius: 30px;
+}
+
+/* Entrar */
+
+h1.entrar{
+position: absolute;
+width: 76px;
+height: 36px;
+left: 854px;
+top: 650px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 36px;
+/* identical to box height */
+
+color: #000000;
+}
+
+
+/* Rectangle 7 */
+
+div.ret7{
+position: absolute;
+width: 405px;
+height: 41px;
+left: 514px;
+top: 571px;
+
+background: #D9D9D9;
+border-radius: 16px;
+}
+
+/* bx:lock-alt */
+
+div.locPos{
+position: absolute;
+width: 32px;
+height: 33px;
+left: 471px;
+top: 532px;
+}
+
+
+/* Vector */
+
+div.vect1{
+position: absolute;
+left: 33.08%;
+right: 65.44%;
+top: 52.22%;
+bottom: 45.09%;
+
+background: #645F5F;
+}
+
+/* ant-design:user-add-outlined */
+
+div.vectMail{
+position: absolute;
+width: 31px;
+height: 32px;
+left: 498.99px;
+top: 424.01px;
+
+background: #FFFFFF;
+transform: rotate(-0.03deg);
+}
+
+/* Vector */
+
+div.vect2{
+position: absolute;
+left: 33.06%;
+right: 65.37%;
+top: 41.7%;
+bottom: 55.79%;
+
+background: #645F5F;
+transform: rotate(-0.03deg);
+}
+
+/* WORK-removebg-preview 1 */
+
+div.logo{
+position: absolute;
+width: 255px;
+height: 200px;
+left: 994px;
+top: 158px;
+
+}
+
+/* Rectangle 3 */
+
+div.ret3{
+position: absolute;
+width: 429px;
+height: 42px;
+left: 514px;
+top: 418.5px;
+
+background: #FDFBFB;
+}
+
+/* Email */
+h2.email{
+position: absolute;
+width: 401px;
+height: 50px;
+left: 55px;
+top: 100px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+
+color: #000000;
+}
+
+
+/* Rectangle 4 */
+
+div.ret4{
+position: absolute;
+width: 397px;
+height: 33px;
+left: 514px;
+top: 529px;
+
+background: #FDFBFB;
+}
+
+/* Senha */
+
+h2.senha{
+position: absolute;
+width: 397px;
+height: 34px;
+left: 51px;
+top: 200px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+
+color: #000000;
+}
+
+
+/* Rectangle 5 */
+
+div.ret5{
+position: absolute;
+width: 605px;
+height: 94px;
+left: 0px;
+top: 0px;
+
+background: #D9D9D9;
+border-radius: 16px;
+}
+
+/* Acesse sua conta */
+h1.acess{
+position: absolute;
+width: 428px;
+height: 68px;
+left: 150px;
+top: 20px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 48px;
+line-height: 58px;
+
+color: #000000;
+}
+
+
+/* Rectangle 6 */
+div.ret6{
+position: absolute;
+width: 405px;
+height: 41px;
+left: 512px;
+top: 462px;
+
+background: #D9D9D9;
+border-radius: 16px;
+}
+
+input.user{
+    position: absolute;
+    width: 519px;
+    height: 30px;
+    left: 50px;
+    top: 140px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    border-radius: 16px;
+    /* identical to box height */
+}
+
+input.senha {
+    position: absolute;
+    width: 519px;
+    height: 30px;
+    left: 50px;
+    top: 240px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    border-radius: 16px;
+    /* identical to box height */
+}
+p.bottom{
+    position: absolute;
+    width: 519px;
+    height: 30px;
+    left: 700px;
+    top: 680px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    /* identical to box height */
+}
+
+input.btnLog{
+    position: absolute;
+    width: 519px;
+    height: 30px;
+    left: 40px;
+    top: 250px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    /* identical to box height */
+}
+i.addUser {
+    position: absolute;
+    width: 31px;
+    height: 32px;
+    left: 13px;
+    top: 104px;
+
+}
+
+i.lock {
+    position: absolute;
+    width: 32px;
+    height: 33px;
+    left: 10px;
+    top: 204px;
+}
+
+img.logo {
+    position: relative;
+    width: 255px;
+    height: 200px;
+    left: -420px;
+    top: -305px;
+}
+
+div.msg1 {
+    width: 600px;
+    position: relative;
+    left: 200px;
+    top: 150px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #000000;
+}

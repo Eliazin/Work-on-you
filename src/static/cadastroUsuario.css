@@ -1,0 +1,468 @@
+/* Login */
+html {
+    position: relative;
+    width: auto;
+    height: auto;
+
+    background: #FFFFFF;
+}
+.login .links, .register .links {
+    display: flex;
+    padding: 0 15px;
+}
+/* background */
+
+body.bkg {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    left: 0px;
+    top: 0px;
+
+    background: #C3E8BD;
+}
+
+/* Rectangle 1 */
+div.ret1 {
+    position: absolute;
+    width: 1108px;
+    height: 731px;
+    left: 194px;
+    top: 146px;
+
+    background: #FDFBFB;
+    box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.25);
+    border-radius: 16px;
+}
+
+/* Rectangle 6 */
+input.ret6 {
+    position: absolute;
+    width: 204px;
+    height: 60px;
+    left: 845px;
+    top: 780px;
+
+    background: #F2D4EF;
+    border-radius: 30px;
+}
+
+/* CADASTRAR */
+h3.cadastrar {
+    position: absolute;
+    width: 150px;
+    height: 36px;
+    left: 819px;
+    top: 719px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    /* identical to box height */
+
+    color: #000000;
+}
+
+
+/* Rectangle 5 */
+
+div.ret5 {
+    position: absolute;
+    width: 709px;
+    height: 107px;
+    left: 555px;
+    top: 475px;
+
+    background: #FFFFFF;
+}
+
+/* Rectangle 8 */
+div.ret8 {
+    position: absolute;
+    width: 709px;
+    height: 107px;
+    left: 556.5px;
+    top: 580.5px;
+
+    background: #FFFFFF;
+}
+
+/* Crie sua conta */
+h1.signin {
+    position: absolute;
+    width: 415px;
+    height: 130px;
+    left: 730px;
+    top: 242px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 72px;
+
+    color: #000000;
+}
+
+
+/* Rectangle 2 */
+div.ret2 {
+    position: absolute;
+    width: 357px;
+    height: 731px;
+    left: 162px;
+    top: 146px;
+
+    background: #EFCAEB;
+    border-radius: 16px 0px 0px 16px;
+}
+
+/* Acesse sua conta. */
+
+h2.login {
+    position: absolute;
+    width: 305px;
+    height: 126px;
+    left: 255px;
+    top: 445px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+
+    color: #000000;
+}
+
+
+/* Preencha seus dados */
+
+h2.preench {
+    position: absolute;
+    width: 305px;
+    height: 126px;
+    left: 792px;
+    top: 318px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+
+    color: #645F5F;
+}
+
+
+/* Bem vindo! */
+h1.bv {
+    position: absolute;
+    width: 317px;
+    height: 93px;
+    left: 225px;
+    top: 360px;
+
+    font-family: 'Anton';
+    font-style: bold;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 72px;
+
+    color: #000000;
+}
+
+
+/* Rectangle 3 */
+button.ret3 {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 204px;
+    height: 60px;
+    left: 250px;
+    top: 531px;
+
+    background: #F2D4EF;
+    border: 3px solid #000000;
+    border-radius: 30px;
+}
+
+/* ENTRAR */
+
+h1.entrar {
+    position: absolute;
+    width: 95px;
+    height: 36px;
+    left: 293px;
+    top: 543px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    /* identical to box height */
+
+    color: #000000;
+}
+
+
+/* Rectangle 4 */
+div.ret4 {
+    position: absolute;
+    width: 709px;
+    height: 107px;
+    left: 555px;
+    top: 368px;
+
+    background: #FFFFFF;
+}
+
+/* Nome */
+h3.nome {
+    position: absolute;
+    width: 519px;
+    height: 30px;
+    left: 688px;
+    top: 378px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    /* identical to box height */
+
+    color: #645F5F;
+}
+
+h3.nomeUser {
+    position: absolute;
+    width: 519px;
+    height: 30px;
+    left: 688px;
+    top: 700px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    /* identical to box height */
+
+    color: #645F5F;
+}
+
+input.nome {
+    position: absolute;
+    width: 519px;
+    height: 30px;
+    left: 688px;
+    top: 410px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    /* identical to box height */
+}
+
+input.nomeUser {
+    position: absolute;
+    width: 519px;
+    height: 30px;
+    left: 688px;
+    top: 730px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    /* identical to box height */
+}
+
+
+/* Email */
+
+h3.email {
+    position: absolute;
+    width: 519px;
+    height: 30px;
+    left: 688px;
+    top: 478px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    /* identical to box height */
+
+    color: #645F5F;
+}
+
+
+/* Vector */
+
+i.vector {
+    position: absolute;
+    width: 31px;
+    height: 32px;
+    left: 614px;
+    top: 51.5%;
+
+    background: #FFFFFF;
+}
+
+/* Input E-mail */
+input.email {
+    position: absolute;
+    width: 519px;
+    height: 30px;
+    left: 688px;
+    top: 510px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    /* identical to box height */
+}
+
+/* bx:lock-alt */
+
+i.lock {
+    position: absolute;
+    width: 32px;
+    height: 33px;
+    left: 612px;
+    top: 591px;
+}
+
+/* Input Senha */
+input.senha {
+    position: absolute;
+    width: 519px;
+    height: 30px;
+    left: 688px;
+    top: 620px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    /* identical to box height */
+}
+
+/* Vector */
+
+i.vec2 {
+    position: absolute;
+    left: 42.85%;
+    right: 54.97%;
+    top: 47.07%;
+    bottom: 50.73%;
+
+    background: #645F5F;
+}
+
+/* Senha */
+h3.senha {
+    position: absolute;
+    width: 519px;
+    height: 30px;
+    left: 688px;
+    top: 588px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    /* identical to box height */
+
+    color: #645F5F;
+}
+
+
+/* ant-design:user-add-outlined */
+i.add {
+    position: absolute;
+    width: 31px;
+    height: 32px;
+    left: 617px;
+    top: 382px;
+
+    background: #FFFFFF;
+}
+i.addUser {
+    position: absolute;
+    width: 31px;
+    height: 32px;
+    left: 617px;
+    top: 705px;
+
+    background: #FFFFFF;
+}
+
+/* Vector */
+a.add {
+    position: absolute;
+    left: 13.38%;
+    right: 13.28%;
+    top: 9.86%;
+    bottom: 9.86%;
+
+    background: #645F5F;
+}
+
+/* Rectangle 7 */
+div.ret7 {
+    position: absolute;
+    width: 358px;
+    height: 208px;
+    left: 161px;
+    top: 669px;
+}
+
+
+/* WORK-removebg-preview 1 */
+img.logo {
+    position: relative;
+    width: 255px;
+    height: 200px;
+    left: 860px;
+    top: 14px;
+}
+
+/* TALK-removebg-preview 1 */
+img.logo2 {
+    position: absolute;
+    width: 251px;
+    height: 205px;
+    left: 215px;
+    top: 672px;
+
+    background: url(TALK-removebg-preview.png);
+}
+
+div.msg1 {
+    width: 600px;
+    position: relative;
+    left: 450px;
+    top: 250px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #000000;
+}
