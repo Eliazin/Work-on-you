@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css" />
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='cadastroUsuario.css') }}">
+    <link rel="stylesheet" href="../static/cadastroUsuario.css">
+
+
+    <title>Cadastro de Usuario</title>
+</head>
+
+<body class="bkg">
+    <div class="container">
+        <div class="row">
+            <form action="{{ url_for('signup') }}" method="post">
+                <div class="ret1">
+                    <img src="static/Logo.png" alt="logo" class="logo">
+                </div>
+                <h1 class="signin">Crie sua Conta</h1>
+                <h2 class="preench">Preencha seus dados</h2>
+                <i class="addUser bi-person-plus"></i>
+                <h3 class="nomeUser">Nome de Usuário</h3>
+                <input type="text" class="form-control nomeUser" name="nomeUser" id="nomeUser"><br>
+                <i class="add bi-person-plus"></i>
+                <h3 class="nome">Nome</h3>
+                <input type="text" class="form-control nome" name="nome" id="nome"><br>
+                <i class="vector bi bi-envelope"></i>
+                <h3 class="email">Email</h3>
+                <input type="email" class="form-control email" name="email" id="email"><br>
+                <i class="lock bi bi-lock"></i>
+                <h3 class="senha">Senha</h3>
+                <input type="password" class="form-control senha" name="senha" id="senha"><br>
+                <input type="submit" value="cadastrar" id="cadastrar" name="cadastrar" class="ret6">
+                <div class="msg msg1">{{ msg }}</div>
+            </form>
+            <div class="ret2 col-md-3"></div>
+            <h1 class="bv">Bem Vindo!</h1>
+            <h2 class="login">Acesse sua conta.</h2>
+            <a href="{{ url_for('login') }}">
+                <button class="ret3">Entrar
+                </button></a>
+            <img src="static/img2.png" alt="" class="logo2">
+        </div>
+    </div>
+</body>
+
+</html>

@@ -313,6 +313,10 @@ i.vector {
     position: absolute;
     width: 31px;
     height: 32px;
+
+    left: 93vh;
+    top: 73vh;
+
     left: 614px;
     top: 51.5%;
 
@@ -456,6 +460,7 @@ img.logo2 {
 div.msg1 {
     width: 600px;
     position: relative;
+    left: 85vh;
     left: 450px;
     top: 250px;
 
