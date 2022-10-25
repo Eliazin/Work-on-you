@@ -1,16 +1,28 @@
 /* Login Screen */
+
 body, html{
+
+body{
+
 position: relative;
 width: 100vw;
 height: 100vh;
 
 background: #C3E8BD;
+
+
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
 }
 
 /* Rectangle 1 */
 
 div.ret1{
+
 position: relative;
+
+position: absolute;
+
 width: 1008px;
 height: 731px;
 left: calc(50% - 1008px/2);
@@ -27,8 +39,13 @@ div.ret2{
 position: absolute;
 width: 603px;
 height: 404px;
+
 left:50vh;
 top:50vh;
+
+left: 630px;
+top: 310px;
+
 
 background: #FDFBFB;
 border-radius: 16px;
@@ -286,8 +303,13 @@ p.bottom{
     position: absolute;
     width: 519px;
     height: 30px;
+
     left: 65vh;
     top: 105vh;
+
+    left: 700px;
+    top: 680px;
+
 
     font-family: 'Poppins';
     font-style: normal;
