@@ -351,8 +351,17 @@ i.vector {
     position: absolute;
     width: 31px;
     height: 32px;
+<<<<<<< HEAD
     left: 615px;
     top: 480px;
+=======
+
+    left: 93vh;
+    top: 73vh;
+>>>>>>> 4e594480d0d0ba5dd6b94740f64af99bc122b23c
+
+    left: 614px;
+    top: 51.5%;
 
     background: #FFFFFF;
 }
@@ -495,6 +504,7 @@ div.msg1 {
     width: 600px;
     position: relative;
     left: 85vh;
+    left: 450px;
     top: 250px;
 
     font-family: 'Poppins';
