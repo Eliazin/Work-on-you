@@ -16,8 +16,6 @@
 
     <link rel="stylesheet" href="{{ url_for('static', filename='login.css') }}">
 
-    <link rel="stylesheet" href="../static/login.css">
-
     <title> Login </title>
 
 </head>
@@ -28,7 +26,9 @@
             <form action="{{ url_for('login') }}" method="post">
                 <div class="ret1"></div>
                 <div class="ret2">
+                    <div class="logo">
                         <img src="static/Logo.png" alt="logo" class="logo">
+                    </div>
                     <div class="ret5"></div>
                     <h1 class="acess">Acesse sua conta</h1>
                     <i class="addUser bi-person-plus"></i>
