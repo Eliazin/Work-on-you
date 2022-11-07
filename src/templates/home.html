@@ -1,0 +1,68 @@
+<!-- Store this code in 'index.html' file inside the 'templates' folder-->
+
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Home Page</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='main.css') }}"
+    />
+    <link rel="stylesheet" href="../static/main.css" />
+  </head>
+  <body>
+      <header id="header">
+        <div class="inner">
+                <img src="../static/Logo.png" class="logo" alt="Logo">
+                <img src="../static/Logo2.png" class="logo2" alt="Logo2">
+        <nav>
+          <ul>
+            <li>
+              <a href="">Contatos</a>
+            </li>
+            <li>
+              <a href="">Sobre nós</a>
+            </li>
+            <li>
+              <a href="#menu">"Menu"</a>
+            </li>
+          </ul>
+        </nav>
+        </div>
+        <div class="ret2">Olá!
+          <h3 class="ret2">vamos começar.</h3></div>
+          <h2 class="ret2"><br><br>Aqui você pode achar diversas <br>atividades que contribuem com<br> o seu bem-estar físico e mental</h2>
+        </div>
+        <div id="main"></div>
+        <a href="https://open.spotify.com/playlist/2X5BPknxexv0e7DdDKUj0C">
+        <img src="../static/Músicas.png" class="musica1" alt="musica">
+        <p class="music">Músicas</p>
+      </a>
+      <a href="https://stackoverflow.com/questions/28411499/disable-scrolling-on-body">
+        <img src="../static/Exercicio.png" class="musica2" alt="musica2">
+        <p class="exercicio">Exercícios</p>
+      </a>
+      <a href="https://www.youtube.com/results?search_query=videos+de+gatitos+para+curar+la+depresion+">
+        <img src="../static/filmes.png" class="musica3" alt="musica3">
+        <p class="filme">Videos Relaxantes</p>
+        </a>
+      </header>
+      
+  </body>
+</html>

@@ -1,4 +1,26 @@
 /* Login Screen */
+<<<<<<< HEAD
+
+html{
+    display: inline-block;
+}
+
+.login .links, .register .links {
+    display: flex;
+    padding: 0 15px;
+}
+
+body{
+    display: flex;
+    position: fixed;
+    width: 50%;
+    height: 100vh;
+    left: 0px;
+    top: 0px;
+
+    background: #C3E8BD;
+    
+=======
 
 body, html{
 
@@ -13,11 +35,19 @@ background: #C3E8BD;
 
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
+>>>>>>> 4e594480d0d0ba5dd6b94740f64af99bc122b23c
 }
 
 /* Rectangle 1 */
 
 div.ret1{
+<<<<<<< HEAD
+position: absolute;
+width: 1000px;
+height: 90vh;
+left: 500px;
+top: 20vh;
+=======
 
 position: relative;
 
@@ -27,6 +57,7 @@ width: 1008px;
 height: 731px;
 left: calc(50% - 1008px/2);
 top: 166px;
+>>>>>>> 4e594480d0d0ba5dd6b94740f64af99bc122b23c
 
 background: #EFCAEB;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -37,11 +68,17 @@ border-radius: 16px;
 
 div.ret2{
 position: absolute;
+<<<<<<< HEAD
+height: 40%;
+left: 670px;
+top: 340px;
+=======
 width: 603px;
 height: 404px;
 
 left:50vh;
 top:50vh;
+>>>>>>> 4e594480d0d0ba5dd6b94740f64af99bc122b23c
 
 left: 630px;
 top: 310px;
@@ -179,8 +216,6 @@ background: #FDFBFB;
 /* Email */
 h2.email{
 position: absolute;
-width: 401px;
-height: 50px;
 left: 55px;
 top: 100px;
 
@@ -210,8 +245,6 @@ background: #FDFBFB;
 
 h2.senha{
 position: absolute;
-width: 397px;
-height: 34px;
 left: 51px;
 top: 200px;
 
@@ -241,10 +274,8 @@ border-radius: 16px;
 /* Acesse sua conta */
 h1.acess{
 position: absolute;
-width: 428px;
-height: 68px;
-left: 150px;
-top: 20px;
+left: 10vw;
+top: 0vw;
 
 font-family: 'Inter';
 font-style: normal;
@@ -301,11 +332,16 @@ input.senha {
 }
 p.bottom{
     position: absolute;
-    width: 519px;
+    width: 40%;
     height: 30px;
+<<<<<<< HEAD
+    left: 72%;
+    top: 70%;
+=======
 
     left: 65vh;
     top: 105vh;
+>>>>>>> 4e594480d0d0ba5dd6b94740f64af99bc122b23c
 
     left: 700px;
     top: 680px;
@@ -352,10 +388,10 @@ i.lock {
 
 img.logo {
     position: relative;
-    width: 255px;
+    width: 100;
     height: 200px;
-    left: -420px;
-    top: -305px;
+    left: 100%;
+    top: -35%;
 }
 
 div.msg1 {
@@ -370,4 +406,52 @@ div.msg1 {
     font-size: 20px;
     line-height: 30px;
     color: #000000;
+}
+
+@media screen and (max-width: 1000px) {
+    .container{
+        -webkit-flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    section{
+        margin-right: 0;
+        margin-left: 0;
+        -webkit-flex-basis: auto;
+        -moz-flex-basis: auto;
+        -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+    }
+    header{
+        margin-bottom: 0;
+        -webkit-flex-basis: auto;
+        -moz-flex-basis: auto;
+        -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+    }
+    header img{
+        max-height: 100%;
+        max-width: 100%;
+    }
+    .ret2{
+        width: 290%;
+        left: auto;
+        margin-left: 0;
+        margin-bottom: 0%;
+        padding-left: 0;
+    }
+    .ret1{
+        width: 150%;
+        height: 50%;
+        position: relative;
+        left: 100%;
+        margin-left: 0%;
+        margin-bottom: 0%;
+        padding-left: -100%;
+    }
+    h1{
+        font-size: 500%;
+    }
 }

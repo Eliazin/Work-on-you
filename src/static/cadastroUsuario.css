@@ -1,4 +1,41 @@
 /* Login */
+@-ms-viewport{
+    width: device-width;
+    height: device-height;
+}
+
+@media screen and (max-width: 480px) {
+
+    html, body {
+        min-width: 320px;
+        min-height: 540px;
+    }
+
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    background: #ffffff;
+}
+
+    body.is-preload *, body.is-preload *:before, body.is-preload *:after {
+        -moz-animation: none !important;
+        -webkit-animation: none !important;
+        -ms-animation: none !important;
+        animation: none !important;
+        -moz-transition: none !important;
+        -webkit-transition: none !important;
+        -ms-transition: none !important;
+        transition: none !important;
+    }
+
 html {
     position: relative;
     width: auto;
@@ -12,12 +49,13 @@ html {
 }
 /* background */
 
-body.bkg {
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-    left: 0px;
-    top: 0px;
+html,body.bkg, div.ret1, div.ret2, i.vector {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 
     background: #C3E8BD;
 }
@@ -313,9 +351,14 @@ i.vector {
     position: absolute;
     width: 31px;
     height: 32px;
+<<<<<<< HEAD
+    left: 615px;
+    top: 480px;
+=======
 
     left: 93vh;
     top: 73vh;
+>>>>>>> 4e594480d0d0ba5dd6b94740f64af99bc122b23c
 
     left: 614px;
     top: 51.5%;
