@@ -5,6 +5,11 @@
     <meta charset="UTF-8" />
     <title>Home Page</title>
 
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css"
@@ -22,47 +27,98 @@
 
     <link
       rel="stylesheet"
+      type="text/css"
       href="{{ url_for('static', filename='main.css') }}"
     />
     <link rel="stylesheet" href="../static/main.css" />
+    <noscript><link rel="stylesheet" href="{{ url_for('static', filename='noscript.css') }}"/></noscript>
   </head>
-  <body>
+
+  <body class="is-touch">
+    <div id="wrapper">
       <header id="header">
         <div class="inner">
-                <img src="../static/Logo.png" class="logo" alt="Logo">
-                <img src="../static/Logo2.png" class="logo2" alt="Logo2">
-        <nav>
-          <ul>
-            <li>
-              <a href="">Contatos</a>
-            </li>
-            <li>
-              <a href="">Sobre nós</a>
-            </li>
-            <li>
-              <a href="#menu">"Menu"</a>
-            </li>
-          </ul>
-        </nav>
+          <img src="../static/Logo.png" class="logo" alt="Logo" />
+          <img src="../static/Logo2.png" class="logo2" alt="Logo2" />
+          <nav>
+            <ul>
+              <li>
+                <a href="#menu">"Menu"</a>
+              </li>
+            </ul>
+          </nav>
         </div>
-        <div class="ret2">Olá!
-          <h3 class="ret2">vamos começar.</h3></div>
-          <h2 class="ret2"><br><br>Aqui você pode achar diversas <br>atividades que contribuem com<br> o seu bem-estar físico e mental</h2>
+        <div class="ret2">
+          Olá!
+          <h3 class="ret2">vamos começar.</h3>
+          <h3 class="ret2">
+            Aqui você pode achar diversas atividades que contribuem com o seu
+            bem-estar físico e mental
+          </h3>
         </div>
-        <div id="main"></div>
-        <a href="https://open.spotify.com/playlist/2X5BPknxexv0e7DdDKUj0C">
-        <img src="../static/Músicas.png" class="musica1" alt="musica">
-        <p class="music">Músicas</p>
-      </a>
-      <a href="https://stackoverflow.com/questions/28411499/disable-scrolling-on-body">
-        <img src="../static/Exercicio.png" class="musica2" alt="musica2">
-        <p class="exercicio">Exercícios</p>
-      </a>
-      <a href="https://www.youtube.com/results?search_query=videos+de+gatitos+para+curar+la+depresion+">
-        <img src="../static/filmes.png" class="musica3" alt="musica3">
-        <p class="filme">Videos Relaxantes</p>
-        </a>
       </header>
-      
+
+      <nav id="menu">
+        <h2>Menu</h2>
+        <ul>
+          <li><a href="home.html">Página Inicial</a></li>
+          <li><a href="musicas.html">Músicas</a></li>
+          <li><a href="exercicios.html">Exercícios</a></li>
+          <li><a href="filmes.html">Filmes e séries</a></li>
+          <li><a href="livros.html">Livros</a></li>
+          <li><a href="mindset.html">Mindset</a></li>
+          <li><a href="organização.html">Organização</a></li>
+        </ul>
+      </nav>
+      <div id="main">
+        <div class="inner">
+          <section class="tiles">
+            <article class="style1">
+              <span class="image">
+                <img src="../static/Músicas.jpg" alt="" />
+              </span>
+              <a
+                href="https://open.spotify.com/playlist/2X5BPknxexv0e7DdDKUj0C"
+              >
+                <h2>Músicas</h2>
+                <div class="content"></div>
+              </a>
+            </article>
+            <article class="style2">
+              <span class="image">
+                <img src="../static/Exercicio.jpg" alt="" />
+              </span>
+              <a
+                href="https://open.spotify.com/playlist/2X5BPknxexv0e7DdDKUj0C"
+              >
+                <h2>Exercícios</h2>
+                <div class="content"></div>
+              </a>
+            </article>
+            <article class="style5">
+              <span class="image">
+                <img src="../static/filmes.jpg" alt="" />
+              </span>
+              <a
+                href="https://open.spotify.com/playlist/2X5BPknxexv0e7DdDKUj0C"
+              >
+                <h2>Filmes</h2>
+                <div class="content"></div>
+              </a>
+            </article>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <script src="../static/jquery.min.js"></script>
+    <script src="../static/browser.min.js"></script>
+    <script src="../static/breakpoints.min.js"></script>
+    <script src="../static/util.js"></script>
+    <script src="../static/main.js"></script>
+  <script src="{{url_for('static', filename='breapoints.min.js')}}"></script>
+  <script type="text/javascript" href="{{ url_for('static', filename='main.js') }}"></script>
   </body>
+    
+
 </html>
