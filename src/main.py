@@ -92,6 +92,34 @@ def signup():
     # Mostrar formulário com mensagem
     return render_template('Signup.html', msg=msg)
 
+@app.route('/exercicios')
+def exercicios():
+    return render_template('exercicios.html')
+
+@app.route('/filmes')
+def filmes():
+    return render_template('filmes.html')
+
+@app.route('/home')
+def home():
+    return render_template('home.html')
+
+@app.route('/livros')
+def livros():
+    return render_template('livros.html')
+
+@app.route('/mindset')
+def mindset():
+    return render_template('mindset.html')
+
+@app.route('/musicas')
+def musicas():
+    return render_template('musicas.html')
+
+@app.route('/organizacao')
+def organizacao():
+    return render_template('organização.html')
+
 if __name__ == "__main__":
     app.debug = True
     app.run()

@@ -1,97 +1,244 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <!--
 	Phantom by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-		<title>Livros work on you</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="../static/main.css" />
-		<noscript><link rel="stylesheet" href="../static/noscript.css" /></noscript>
-	</head>
-	<body class>
-		<!-- Wrapper -->
-			<div id="wrapper">
+  <head>
+    <title>Livros work on you</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="../static/main.css" />
+    <noscript><link rel="stylesheet" href="../static/noscript.css" /></noscript>
+  </head>
+  <body class>
+    <!-- Wrapper -->
+    <div id="wrapper">
+      <!-- Header -->
+      <header id="header">
+        <div class="inner">
+          <!-- Logo -->
+          <img src="../static/Logo.png" class="logo" alt="Logo" />
+          <img
+            src="../static/livro.png"
+            class="logo"
+            style="margin-left: 85%; margin-top: -50%"
+          />
+          <!-- Nav -->
+          <nav>
+            <ul>
+              <li><a href="#menu">Menu</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
 
-				<!-- Header -->
-					<header id="header">
-						<div class="inner">
+      <!-- Menu -->
+      <nav id="menu">
+        <h2>Menu</h2>
+        <ul>
+          <li><a href="{{url_for('home')}}">Página Inicial</a></li>
+          <li><a href="{{url_for('musicas')}}">Músicas</a></li>
+          <li><a href="{{url_for('exercicios')}}">Exercícios</a></li>
+          <li><a href="{{url_for('filmes')}}">Filmes e séries</a></li>
+          <li><a href="{{url_for('livros')}}">Livros</a></li>
+          <li><a href="{{url_for('mindset')}}">Mindset</a></li>
+          <li><a href="{{url_for('organizacao')}}">Organização</a></li>
+        </ul>
+      </nav>
 
-							<!-- Logo -->
-                            <img src="../static/Logo.png" class="logo" alt="Logo">
+      <!-- Main -->
+      <div id="main">
+        <div class="inner">
+          <h1 style="text-align: center; font-weight: bolder; font-size: 80px">
+            Livros
+          </h1>
+          <h2 style="text-align: center">
+            Recomendada por psicólogos, a leitura é uma alternativa saudável,
+            relaxante e capaz de reduzir os sintomas
+          </h2>
+          <p>
+            Além de trabalhar a imaginação e a criatividade, a leitura cumpre
+            uma importante função terapêutica e pode ajudar no combate a doenças
+            vinculadas à saúde mental, como a ansiedade. <br /><br />
+            A inclusão da prática da leitura na rotina no tratamento da
+            ansiedade é recomendada por psicólogos como uma alternativa saudável
+            e relaxante, capaz de diminuir os níveis do hormônio do estresse,
+            desacelerando os pensamentos e o ritmo da respiração. <br /><br />
+            Recomendações de Leitura:
+          </p>
+          <h1 style="text-weight: bold; font-size: 20px; display: inline">
+            "AS COISAS QUE VOCÊ SÓ VÊ QUANDO DESACELERA"
+          </h1>
+          <h1 style="display: inline; font-size: 20px; font-weight: lighter">
+            ,DE HAENIM SUNIM
+          </h1>
+          <h1 style="font-size: 20px; font-weight: 50">
+            Para tranquilizar os pensamentos e cultivar a calma, uma ótima
+            leitura sobre autocuidado é o livro “As Coisas que Você Só Vê Quando
+            Desacelera”, de Haemin Sunin. Segundo Natalia, “é um livro repleto
+            de pérolas de calmaria, trazendo atenção aos detalhes que passam
+            despercebidos no furacão do dia a dia. É perfeito para começar o dia
+            ou fazer pequenas pausas ao longo do expediente”.
+          </h1>
+          <h1 style="text-weight: bold; font-size: 20px; display: inline">
+            "O INFERNO SOMOS NÓS”
+          </h1>
+          <h1 style="display: inline; font-size: 20px; font-weight: lighter">
+            ,DE LEANDRO KARNAL E MONJA COEN
+          </h1>
+          <h1 style="font-size: 20px; font-weight: 50">
+            apesar do título, o livro traz a transcrição de uma conversa entre
+            Leandro Karnal e a Monja Coen, com uma intensa reflexão sobre o que
+            significa paz. O livro é curto, em forma de diálogo, e nos leva a
+            pensar sobre como, muitas vezes, cedemos ao caminho da raiva em vez
+            de perceber situações desafiadoras por uma ótica diferente”.
+          </h1>
+          <h1 style="text-weight: bold; font-size: 20px; display: inline">
+            “ALICE NO PAÍS DAS MARAVILHAS”
+          </h1>
+          <h1 style="display: inline; font-size: 20px; font-weight: lighter">
+            , DE LEWIS CARROLL
+          </h1>
+          <h1 style="font-size: 20px; font-weight: 50">
+            Apesar de ser uma leitura infantil,o livro “Alice no País das
+            Maravilhas”, de Lewis Carroll, “traz uma hipérbole sobre a infância
+            e o papel dos adultos em um mundo arbitrário cada vez mais repleto
+            de regras”. O olhar inocente e curioso da protagonista é doce e
+            divertido. É divertido como ela sempre decide seguir em frente,
+            mesmo diante de situações sem sentido que a tiram do sério
+          </h1>
+          <h1 style="text-weight: bold; font-size: 20px; display: inline">
+            “COMER, REZAR E AMAR”
+          </h1>
+          <h1 style="display: inline; font-size: 20px; font-weight: lighter">
+            , DE ELIZABETH GILBERT
+          </h1>
+          <h1 style="font-size: 20px; font-weight: 50">
+            Uma das leituras mais clássicas sobre autocuidado é o livro “Comer,
+            rezar e amar”, de Elizabeth Gilbert. Trata-se de um conteúdo de
+            autorrelato, em que a autora conta as decisões drásticas que tomou
+            em prol da felicidade. Você já tinha ouvido falar dele? Então,
+            aproveite para adicioná-lo na sua lista de favoritos.
+          </h1>
+          <h1 style="text-weight: bold; font-size: 20px; display: inline">
+            "O ALQUIMISTA”
+          </h1>
+          <h1 style="display: inline; font-size: 20px; font-weight: lighter">
+            , DE PAULO COELHO
+          </h1>
+          <h1 style="font-size: 20px; font-weight: 50">
+            Se você busca uma obra de narrativa leve, o livro “O Alquimista”, de
+            Paulo Coelho, é uma ótima indicação. De acordo com Natalia, “a
+            leitura traz uma jornada de um homem na busca de seu sonho. Repleto
+            de metáforas, o livro é uma aula de calmaria e conexão com o
+            propósito. Ele fala sobre como o sonho deve vir como prioridade
+            sobre um mundo que insiste que ele desapareça”.
+          </h1>
+          <h1 style="text-weight: bold; font-size: 20px; display: inline">
+            “O PODER DO SILÊNCIO"
+          </h1>
+          <h1 style="display: inline; font-size: 20px; font-weight: lighter">
+            , DE ECKHART TOLLE
+          </h1>
+          <h1 style="font-size: 20px; font-weight: 50">
+            Outra leitura sobre autocuidado é o livro “O Poder do Silêncio”, de
+            Eckhart Tolle. O autor revela a importância de vivermos intensamente
+            no presente, aprendendo a silenciar alguns pensamentos para
+            encontrar sabedoria. Esta é uma excelente opção de livro para
+            refletir sobre sua rotina no final do dia.
+          </h1>
+          <h1 style="text-weight: bold; font-size: 20px; display: inline">
+            “MAIS FORTE QUE NUNCA”
+          </h1>
+          <h1 style="display: inline; font-size: 20px; font-weight: lighter">
+            , DE BRENÉ BROWN
+          </h1>
+          <h1 style="font-size: 20px; font-weight: 50">
+            Uma ótima opção de leitura para aprender a lidar com os novos
+            desafios do dia a dia é o livro “Mais Forte que Nunca” de Brené
+            Brown. Nele, há relatos de diversas dificuldades que as pessoas
+            enfrentam, sobre como elas conseguem superar tudo, saindo mais
+            fortes que nunca.
+          </h1>
+          <h1 style="text-weight: bold; font-size: 20px; display: inline">
+            “A VIDA INVISÍVEL”
+          </h1>
+          <h1 style="display: inline; font-size: 20px; font-weight: lighter">
+            , DE ADDIE LARUE
+          </h1>
+          <h1 style="font-size: 20px; font-weight: 50">
+            O livro “A Vida Invisível”, de Addie LaRue, segundo Natalia, é uma
+            leitura "de baixa fantasia, que mostra a importância de se amar e se
+            desenvolver, independentemente da circunstância em que se esteja
+            vivendo. É uma obra belíssima sobre a arte, a passagem do tempo e a
+            marca que deixamos no mundo”.
+          </h1>
+          <h1 style="text-weight: bold; font-size: 20px; display: inline">
+            “BONS HÁBITOS, MAUS HÁBITOS”
+          </h1>
+          <h1 style="display: inline; font-size: 20px; font-weight: lighter">
+            , DE WENDY WOOD
+          </h1>
+          <h1 style="font-size: 20px; font-weight: 50">
+            Se você busca um livro sobre autocuidado que ajuda a trazer mudanças
+            positivas para sua rotina, “Bons Hábitos, Maus Hábitos”, de Wendy
+            Wood, pode virar uma de suas leituras favoritas. Ele mostra como
+            transformar comportamentos potencialmente prejudiciais em poderosos
+            hábitos produtivos.
+          </h1>
+        </div>
+      </div>
 
-							<!-- Nav -->
-								<nav>
-									<ul>
-										<li><a href="#menu">Menu</a></li>
-									</ul>
-								</nav>
+      <!-- Footer -->
+      <footer id="footer">
+        <div class="inner">
+          <section class="musica">
+            <h2>Entre em contato</h2>
+            <form method="post" action="#">
+              <div class="fields">
+                <div class="field half">
+                  <input type="text" name="name" id="name" placeholder="Nome" />
+                </div>
+                <div class="field half">
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Email"
+                  />
+                </div>
+                <div class="field">
+                  <textarea
+                    name="message"
+                    id="message"
+                    placeholder="Mensagem"
+                  ></textarea>
+                </div>
+              </div>
+              <ul class="actions">
+                <li><input type="submit" value="Send" class="primary" /></li>
+              </ul>
+            </form>
+          </section>
+        </div>
+      </footer>
+    </div>
 
-						</div>
-					</header>
-
-			<!-- Menu -->
-            <nav id="menu">
-                <h2>Menu</h2>
-                <ul>
-                    <li><a href="home.html">Página Inicial</a></li>
-                    <li><a href="musicas.html">Músicas</a></li>
-                    <li><a href="exercicios.html">Exercícios</a></li>
-                    <li><a href="filmes.html">Filmes e séries</a></li>
-                    <li><a href="livros.html">Livros</a></li>
-                    <li><a href="mindset.html">Mindset</a></li>
-                    <li><a href="organização.html">Organização</a></li>
-                </ul>
-            </nav>
-
-				<!-- Main -->
-					<div id="main">
-						<div class="inner">
-							<h1>Livros</h1>
-							<span class="image main"><img src="../static/Músicas.jpg" alt="" /></span>
-							<p>Nesta página você encontrará diversas playlists para lhe ajudar a superar suas preocupaç</p>
-							<p></p>
-							<p></p>
-						</div>
-					</div>
-
-				<!-- Footer -->
-					<footer id="footer">
-						<div class="inner">
-							<section class="musica">
-								<h2>Entre em contato</h2>
-								<form method="post" action="#">
-									<div class="fields">
-										<div class="field half">
-											<input type="text" name="name" id="name" placeholder="Nome" />
-										</div>
-										<div class="field half">
-											<input type="email" name="email" id="email" placeholder="Email" />
-										</div>
-										<div class="field">
-											<textarea name="message" id="message" placeholder="Mensagem"></textarea>
-										</div>
-									</div>
-									<ul class="actions">
-										<li><input type="submit" value="Send" class="primary" /></li>
-									</ul>
-								</form>
-							</section>
-						</div>
-					</footer>
-
-			</div>
-
-		<!-- Scripts -->
-			<script src="../static/jquery.min.js"></script>
-			<script src="../static/browser.min.js"></script>
-			<script src="../static/breakpoints.min.js"></script>
-			<script src="../static/util.js"></script>
-			<script src="../static/main.js"></script>
-			<script src="{{url_for('static', filename='breapoints.min.js')}}"></script>
-			<script type="text/javascript" href="{{ url_for('static', filename='main.js') }}"></script>
-	</body>
+    <!-- Scripts -->
+    <script src="../static/jquery.min.js"></script>
+    <script src="../static/browser.min.js"></script>
+    <script src="../static/breakpoints.min.js"></script>
+    <script src="../static/util.js"></script>
+    <script src="../static/main.js"></script>
+    <script src="{{url_for('static', filename='breapoints.min.js')}}"></script>
+    <script
+      type="text/javascript"
+      href="{{ url_for('static', filename='main.js') }}"
+    ></script>
+  </body>
 </html>
