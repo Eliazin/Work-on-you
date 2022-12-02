@@ -72,12 +72,12 @@ def signup():
             msg = 'Usuário já existente'
         # Se o formulário não for preenchido, mostrar uma mensagem de erro
         elif not username or not password or not email or not nomeUser:
-            msg = 'Por favor preencha o formulário completo'
+            msg = '\n\nPor favor preencha o formulário completo'
         # Se o email não for válido, mostrar uma mensagem de erro
         elif not re.match(r'[^@]+@[^@]+\.[^@]+', email):
             msg = 'Endereço de e-mail inválido'
         elif (not re.match(r"^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$", password)):
-            msg = 'senha deve conter no mínimo 12 caracteres'
+            msg = 'senha deve conter no mínimo 8 caracteres,\n uma letra e um caracter especial'
         elif not re.match(r'[A-Za-z0-9]+', username):
             msg = 'Nome de Usuário deve conter apenas letras e números'
         else:
@@ -119,6 +119,27 @@ def musicas():
 @app.route('/organizacao')
 def organizacao():
     return render_template('organização.html')
+
+@app.route('/planner')
+def planner():
+    return render_template('planner.html')
+
+@app.route('/alimentacao')
+def alimentacao():
+    return render_template('alimentacao.html')
+
+@app.route('/cardio')
+def cardio():
+    return render_template('cardio.html')
+
+@app.route('/aerobico')
+def aerobico():
+    return render_template('aerobico.html')
+
+@app.route('/muscu')
+def muscu():
+    return render_template('muscu.html')
+
 
 if __name__ == "__main__":
     app.debug = True

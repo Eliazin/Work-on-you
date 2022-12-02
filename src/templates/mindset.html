@@ -5,61 +5,172 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-		<title>Mindset work on you</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="../static/main.css" />
-		<noscript><link rel="stylesheet" href="../static/noscript.css" /></noscript>
-	</head>
-	<body class>
-		<!-- Wrapper -->
-			<div id="wrapper">
 
-				<!-- Header -->
-					<header id="header">
-						<div class="inner">
+<head>
+	<title>Mindset work on you</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-							<!-- Logo -->
-                            <img src="../static/Logo.png" class="logo" alt="Logo">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+		crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
 
-							<!-- Nav -->
-								<nav>
-									<ul>
-										<li><a href="#menu">Menu</a></li>
-									</ul>
-								</nav>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+	<link rel="stylesheet" href="../static/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="../static/noscript.css" />
+	</noscript>
+</head>
 
-						</div>
-					</header>
+<body class>
+	<!-- Wrapper -->
+	<div id="wrapper">
 
-			<!-- Menu -->
-            <nav id="menu">
-                <h2>Menu</h2>
-                <ul>
-					<li><a href="{{url_for('home')}}">Página Inicial</a></li>
-					<li><a href="{{url_for('musicas')}}">Músicas</a></li>
-					<li><a href="{{url_for('exercicios')}}">Exercícios</a></li>
-					<li><a href="{{url_for('filmes')}}">Filmes e séries</a></li>
-					<li><a href="{{url_for('livros')}}">Livros</a></li>
-					<li><a href="{{url_for('mindset')}}">Mindset</a></li>
-					<li><a href="{{url_for('organizacao')}}">Organização</a></li>
-                </ul>
-            </nav>
+		<!-- Header -->
+		<header id="header">
+			<div class="inner">
 
-				<!-- Main -->
-					<div id="main">
-						<div class="inner">
-							<h1>Mindset</h1>
-							<span class="image main"><img src="../static/Músicas.jpg" alt="" /></span>
-							<p>Nesta página você encontrará diversas playlists para lhe ajudar a superar suas preocupaç</p>
-							<p></p>
-							<p></p>
-						</div>
-					</div>
+				<!-- Logo -->
+				<img src="../static/Logo.png" class="logo" alt="Logo">
+				<img src="../static/mind.png" class="logo" style="margin-left: 85%; margin-top: -50%">
 
-				<!-- Footer -->
-					<footer id="footer">
+				<!-- Nav -->
+				<nav>
+					<ul>
+						<li><a href="#menu">Menu</a></li>
+					</ul>
+				</nav>
+
+			</div>
+		</header>
+
+		<!-- Menu -->
+		<nav id="menu">
+			<h2>Menu</h2>
+			<ul>
+				<li><a href="{{url_for('home')}}">Página Inicial</a></li>
+				<li><a href="{{url_for('musicas')}}">Músicas</a></li>
+				<li><a href="{{url_for('exercicios')}}">Exercícios</a></li>
+				<li><a href="{{url_for('filmes')}}">Filmes e séries</a></li>
+				<li><a href="{{url_for('livros')}}">Livros</a></li>
+				<li><a href="{{url_for('mindset')}}">Mindfulness</a></li>
+				<li><a href="{{url_for('organizacao')}}">Organização</a></li>
+				<li><a href="{{url_for('alimentacao')}}">Alimentacao</a></li>
+				<li><a href="{{url_for('login')}}">Logout</a></li>
+			</ul>
+		</nav>
+
+		<!-- Main -->
+		<div id="main">
+			<div class="inner">
+				<h1 style="text-align: center;">Mindfulness</h1>
+				<span class="image main"><img src="" alt="" /></span>
+				<h2>“Mindfulness, ou atenção plena, é o ato de trazer a atenção para o momento presente de forma não
+					julgadora, ganhando consciência de nossos pensamentos, sentimentos e sensações físicas”</h2>
+			</div>
+		</div>
+		<div id="main">
+			<div class="inner">
+				<hr style=" border-top: 8px solid #bbb; border-radius: 5px;">
+				<h2 style="text-align: center;">6 ações de mindfulness para melhorar a sua vida</h2>
+				<button type="button" data-bs-toggle="collapse" data-bs-target="#mind1">1. Sentindo seu corpo</button>
+				<p class="collapse" id="mind1">Enquanto seu café esquenta, faça uma pequena sessão de alongamento. Leve
+					as mãos ao alto, puxe
+					a
+					cabeça para o lado, faça movimentos amplos com os braços… Perceba a sensação em cada músculo
+					individualmente, fazendo um escaneamento mental pelo seu corpo. Notar as sensações físicas de
+					tarefas simples vai fazer você conhecer cada vez mais seu próprio corpo e o que te agrada – ou não.
+				</p>
+				<button type="button" data-bs-toggle="collapse" data-bs-target="#mind2">2. Escovando os dentes</button>
+				<p class="collapse" id="mind2">Dificilmente estamos presentes nesse momento, aproveitamos a ação para
+					adiantar afazeres, mexer no
+					celular ou preparar uma lista mental do que temos que fazer. “Em vez disso, pare em frente ao
+					espelho e observe o seu rosto”, Mantenha a atenção nos movimentos da escova em sua boca. Note qual é
+					a sensação da espuma, o gosto da pasta, o frescor”. Esse exercício vai fornecer uma sensação de
+					calma para começar o dia.
+				</p>
+				<button type="button" data-bs-toggle="collapse" data-bs-target="#mind3">3. No caminho ao
+					trabalho</button>
+				<p class="collapse" id="mind3">Em vez de ouvir músicas ou mexer no celular, observe o seu caminho.
+					Preste atenção nas árvores e
+					prédios que você nunca havia reparado. Observe as cores, os sons, cada um de maneira isolada. Que
+					sensações cada elemento te traz? Reconhecer esses sentimentos vai permitir que você tenha maior
+					controle das suas reações ao longo do dia.
+				</p>
+				<button type="button" data-bs-toggle="collapse" data-bs-target="#mind4">4. Durante as refeições</button>
+				<p class="collapse" id="mind4">Durante as refeições, traga sua atenção para a textura dentro de sua
+					boca, o gosto de cada um dos
+					alimentos. Você pode até descobrir que não gosta tanto assim de batata quando come sozinha, apenas
+					da praticidade em eventos sociais.
+				</p>
+				<button type="button" data-bs-toggle="collapse" data-bs-target="#mind5">5. No escritório</button>
+				<p class="collapse" id="mind5">Dificuldade para se concentrar? Notar as coisas ao seu arredor,
+					curiosamente, faz com que fique mais
+					focado. “Feche os olhos e preste atenção nos ruídos. Ouça o zumbido em seu ouvido e imagine ele
+					como
+					uma linha fixa. Depois, repare nos barulhos dos carros, dos teclados, das conversas… Imagine
+					cada um
+					desses como uma faixa diferente em seu cérebro. Permaneça ouvindo até sua mente conseguir
+					organizar
+					todos esses sons e trabalhar com eles”
+				</p>
+				<button type="button" data-bs-toggle="collapse" data-bs-target="#mind6">6. Buscando novas
+					experiências</button>
+				<p class="collapse" id="mind6">O mindfulness não precisa ser aplicado apenas à sua rotina. sair dela
+					também é uma prática. “Veja
+					um
+					filme que você não veria normalmente, faça um caminho alternativo para casa, coma em outros
+					lugares.
+					Ao praticar essas ações, observe os detalhes do ambiente e perceba as emoções que estas quebras
+					na
+					rotina provocam em você”.
+				</p>
+			</div>
+		</div>
+		<div style="margin-bottom: 60px;"></div>
+		<div id="main">
+			<div class="inner">
+				<section class="tiles">
+					<article>
+						<span class="image">
+							<img src="../static/mind1.png" alt="" />
+						</span>
+						<a href="https://www.youtube.com/watch?v=Av3Rtw-nlnA&ab_channel=Persono">
+							<div class="content"></div>
+						</a>
+					</article>
+					<article>
+						<span class="image">
+							<img src="../static/mind2.png" alt="" style="height: 68%;" />
+						</span>
+						<a href="https://www.youtube.com/watch?v=vJfwuCB5C8o&ab_channel=CamilaZen">
+							<div class="content"></div>
+						</a>
+					</article>
+					<article>
+						<span class="image">
+							<img src="../static/mind3.png" alt="" />
+						</span>
+						<a href="https://www.youtube.com/watch?v=1fYt92gSJ_U&ab_channel=MeditarparaDespertar">
+							<div class="content"></div>
+						</a>
+					</article>
+					<article>
+						<span class="image">
+							<img src="../static/mind4.png" alt="" />
+						</span>
+						<a href="https://www.youtube.com/watch?v=yHiTaB-pL7o&ab_channel=MeditarparaDespertar">
+							<div class="content"></div>
+						</a>
+					</article>
+				</section>
+			</div>
+		</div>
+		<!-- Footer -->
+		<!-- <footer id="footer">
 						<div class="inner">
 							<section class="musica">
 								<h2>Entre em contato</h2>
@@ -83,16 +194,17 @@
 						</div>
 					</footer>
 
-			</div>
+			</div> -->
 
 		<!-- Scripts -->
-			<script src="../static/jquery.min.js"></script>
-			<script src="../static/browser.min.js"></script>
-			<script src="../static/breakpoints.min.js"></script>
-			<script src="../static/util.js"></script>
-			<script src="../static/main.js"></script>
-			<script src="{{url_for('static', filename='breapoints.min.js')}}"></script>
-			<script type="text/javascript" href="{{ url_for('static', filename='main.js') }}"></script>
+		<script src="../static/jquery.min.js"></script>
+		<script src="../static/browser.min.js"></script>
+		<script src="../static/breakpoints.min.js"></script>
+		<script src="../static/util.js"></script>
+		<script src="../static/main.js"></script>
+		<script src="{{url_for('static', filename='breapoints.min.js')}}"></script>
+		<script type="text/javascript" href="{{ url_for('static', filename='main.js') }}"></script>
 
-	</body>
+</body>
+
 </html>

@@ -5,61 +5,118 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-		<title>Exercicios work on you</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="../static/main.css" />
-		<noscript><link rel="stylesheet" href="../static/noscript.css" /></noscript>
-	</head>
-	<body class>
-		<!-- Wrapper -->
-			<div id="wrapper">
 
-				<!-- Header -->
-					<header id="header">
-						<div class="inner">
+<head>
+	<title>Exercicios work on you</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="../static/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="../static/noscript.css" />
+	</noscript>
+</head>
 
-							<!-- Logo -->
-                            <img src="../static/Logo.png" class="logo" alt="Logo">
+<body class>
+	<!-- Wrapper -->
+	<div id="wrapper">
 
-							<!-- Nav -->
-								<nav>
-									<ul>
-										<li><a href="#menu">Menu</a></li>
-									</ul>
-								</nav>
+		<!-- Header -->
+		<header id="header">
+			<div class="inner">
 
-						</div>
-					</header>
+				<!-- Logo -->
+				<img src="../static/Logo.png" class="logo" alt="Logo">
+				<img src="../static/Atividades.png" class='logo' style="margin-left: 85%; margin-top: -50%" />
 
-			<!-- Menu -->
-            <nav id="menu">
-                <h2>Menu</h2>
-                <ul>
-					<li><a href="{{url_for('home')}}">Página Inicial</a></li>
-					<li><a href="{{url_for('musicas')}}">Músicas</a></li>
-					<li><a href="{{url_for('exercicios')}}">Exercícios</a></li>
-					<li><a href="{{url_for('filmes')}}">Filmes e séries</a></li>
-					<li><a href="{{url_for('livros')}}">Livros</a></li>
-					<li><a href="{{url_for('mindset')}}">Mindset</a></li>
-					<li><a href="{{url_for('organizacao')}}">Organização</a></li>
-                </ul>
-            </nav>
+				<!-- Nav -->
+				<nav>
+					<ul>
+						<li><a href="#menu">Menu</a></li>
+					</ul>
+				</nav>
 
-				<!-- Main -->
-					<div id="main">
-						<div class="inner">
-							<h1>Exercicios</h1>
-							<span class="image main"><img src="../static/Músicas.jpg" alt="" /></span>
-							<p>Nesta página você encontrará diversas playlists para lhe ajudar a superar suas preocupaç</p>
-							<p></p>
-							<p></p>
-						</div>
-					</div>
+			</div>
+		</header>
 
-				<!-- Footer -->
-					<footer id="footer">
+		<!-- Menu -->
+		<nav id="menu">
+			<h2>Menu</h2>
+			<ul>
+				<li><a href="{{url_for('home')}}">Página Inicial</a></li>
+				<li><a href="{{url_for('musicas')}}">Músicas</a></li>
+				<li><a href="{{url_for('exercicios')}}">Exercícios</a></li>
+				<li><a href="{{url_for('filmes')}}">Filmes e séries</a></li>
+				<li><a href="{{url_for('livros')}}">Livros</a></li>
+				<li><a href="{{url_for('mindset')}}">Mindfulness</a></li>
+				<li><a href="{{url_for('organizacao')}}">Organização</a></li>
+				<li><a href="{{url_for('alimentacao')}}">Alimentacao</a></li>
+				<li><a href="{{url_for('login')}}">Logout</a></li>
+			</ul>
+		</nav>
+
+		<!-- Main -->
+		<div id="main">
+			<div class="inner">
+				<h1>ATIVIDADES FÍSICAS</h1>
+				<p>O esporte e outras atividades físicas são aliados na luta contra a depressão e outros transtornos
+					psicológicos. A prática regular de exercícios, combinada a tratamentos médicos, promove uma melhora
+					no quadro depressivo e proporciona mais qualidade de vida.
+
+					Isso porque a atividade física libera serotonina no organismo, neurotransmissor que garante a
+					sensação de felicidade. </p>
+				<hr style=" border-top: 8px solid #bbb; border-radius: 5px;">
+				<p>Consequentemente, a prática de esportes e atividades físicas está relacionada também à saúde mental e
+					emocional. Por exemplo, os exercícios regulares são capazes de reduzir o desânimo, tristeza,
+					irritabilidade e nervosismo.
+
+					Além de auxiliar no tratamento de transtornos psicológicos, um corpo ativo traz outros benefícios.
+					Entre eles estão a concentração, memória, bom humor, menos estresse e um sono de mais qualidade.</p>
+				
+					<h1 style="font-size: 40px; text-align: center;">SEPARAMOS PROGRAMAS DIVERSOS DE EXERCÍCIOS PARA VOCÊ SE MANTER ATIVO, ESCOLHA O QUE MELHOR COMBINA COM VOCÊ!</h1>
+			</div>
+		</div>
+		<div id="main">
+			<div class="inner">
+			  <section class="tiles">
+				<article>
+				  <span class="image">
+					<img src="../static/Avo-cardio.png" alt="" />
+				  </span>
+				  <a
+					href="{{url_for('cardio')}}"
+				  >
+					<h2 style="color: black">Cárdio</h2>
+					<div class="content"></div>
+				  </a>
+				</article>
+				<article>
+				  <span class="image">
+					<img src="../static/Abaerobico.png" alt="" style="height: 68%;" />
+				  </span>
+				  <a
+					href="{{url_for('aerobico')}}"
+				  >
+					<h2 style="color: black;">Aeróbico</h2>
+					<div class="content"></div>
+				  </a>
+				</article>
+				<article>
+				  <span class="image">
+					<img src="../static/Bir.png" alt="" />
+				  </span>
+				  <a
+					href="{{url_for('muscu')}}"
+				  >
+					<h2 style="color: black">Musculação</h2>
+					<div class="content"></div>
+				  </a>
+				</article>
+			  </section>
+			</div>
+		  </div>
+
+		<!-- Footer -->
+		<!-- <footer id="footer">
 						<div class="inner">
 							<section class="musica">
 								<h2>Entre em contato</h2>
@@ -81,18 +138,19 @@
 								</form>
 							</section>
 						</div>
-					</footer>
+					</footer> -->
 
-			</div>
+	</div>
 
-		<!-- Scripts -->
-			<script src="../static/jquery.min.js"></script>
-			<script src="../static/browser.min.js"></script>
-			<script src="../static/breakpoints.min.js"></script>
-			<script src="../static/util.js"></script>
-			<script src="../static/main.js"></script>
-			<script src="{{url_for('static', filename='breapoints.min.js')}}"></script>
-			<script type="text/javascript" href="{{ url_for('static', filename='main.js') }}"></script>
+	<!-- Scripts -->
+	<script src="../static/jquery.min.js"></script>
+	<script src="../static/browser.min.js"></script>
+	<script src="../static/breakpoints.min.js"></script>
+	<script src="../static/util.js"></script>
+	<script src="../static/main.js"></script>
+	<script src="{{url_for('static', filename='breapoints.min.js')}}"></script>
+	<script type="text/javascript" href="{{ url_for('static', filename='main.js') }}"></script>
 
-	</body>
+</body>
+
 </html>

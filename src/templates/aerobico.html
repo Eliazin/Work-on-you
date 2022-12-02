@@ -1,0 +1,133 @@
+<!-- Store this code in 'index.html' file inside the 'templates' folder-->
+
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Home Page</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}" />
+    <link rel="stylesheet" href="../static/main.css" />
+    <noscript>
+        <link rel="stylesheet" href="{{ url_for('static', filename='noscript.css') }}" />
+    </noscript>
+</head>
+
+<body class="is-touch">
+    <div id="wrapper">
+        <header id="header">
+            <div class="inner">
+                <h1 style="font-size: 80px;">AERÓBICO</h1>
+                <h2 style="font-size: 20px;">O QUE É E PARA QUE SERVE?</h2>
+                <p>As atividades aeróbicas são conhecidas pelo movimento constante do corpo e por promover o gasto
+                    intenso de calorias. Além disso, praticar exercícios aeróbicos regularmente, como caminhar, dançar
+                    ou nadar pode trazer uma série de benefícios à saúde, entre eles o aumento da expectativa de vida.
+                </p>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#menu">"Menu"</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <h2 style="font-size: 17px;">Conheça alguns dos principais exercícios físicos aeróbicos: <br> <br>
+
+                Caminhada: pode ser feita em qualquer lugar e não é preciso nenhuma experiência para praticá-la, somente
+                disposição. <br> <br>
+
+                Natação: esporte considerado adequado para todas as idades e de baixo impacto para o corpo, por ser
+                feito dentro da água. <br> <br>
+
+                King Boxing: os exercícios misturam artes marciais, como taekwondo e kung fu, com as técnicas do boxe.
+                <br> <br>
+
+                Hidroginástica: por ser praticada dentro da água, o desgaste muscular, a tensão e os impactos são
+                reduzidos. <br> <br>
+
+                BICICLETA: Pedalar é um exercício que acelera o metabolismo, ou seja, a queima de calorias em seu corpo
+                será mais rápida. Isso evita o acúmulo de gordura no organismo, Mesmo que você pedale por apenas
+                meia-hora por semana. <br> <br>
+
+                Dança: independentemente da modalidade, a dança é uma excelente aliada para colocar o corpo inteiro em
+                movimento. VOCÊ PODE UTILIZAR NOSSA SELEÇÃO DE MUSICAS AQUI DO WORK ON YOU <br> <br>
+
+                Pular corda: esse passatempo costumeiramente associado à infância é muito eficiente em diversas fases da
+                vida, trabalha diversos músculos do corpo, especialmente as pernas.</h2>
+        </header>
+
+        <nav id="menu">
+            <h2>Menu</h2>
+            <ul>
+                <li><a href="{{url_for('home')}}">Página Inicial</a></li>
+                <li><a href="{{url_for('musicas')}}">Músicas</a></li>
+                <li><a href="{{url_for('exercicios')}}">Exercícios</a></li>
+                <li><a href="{{url_for('filmes')}}">Filmes e séries</a></li>
+                <li><a href="{{url_for('livros')}}">Livros</a></li>
+                <li><a href="{{url_for('mindset')}}">Mindfulness</a></li>
+                <li><a href="{{url_for('organizacao')}}">Organização</a></li>
+                <li><a href="{{url_for('alimentacao')}}">Alimentacao</a></li>
+                <li><a href="{{url_for('login')}}">Logout</a></li>
+            </ul>
+        </nav>
+        <div id="main">
+            <div class="inner">
+                <section class="tiles">
+                    <article>
+                        <span class="image">
+                            <img src="../static/aero1.png" alt="" />
+                        </span>
+                        <a href="https://www.youtube.com/watch?v=QZjuHeAn8wE&feature=youtu.be">
+                            <div class="content"></div>
+                        </a>
+                    </article>
+                    <article>
+                        <span class="image">
+                            <img src="../static/aero2.png" alt="" style="height: 68%;" />
+                        </span>
+                        <a href="https://www.youtube.com/watch?v=Gs7H9oRGeiY&feature=youtu.be&ab_channel=CarolBorba">
+                            <div class="content"></div>
+                        </a>
+                    </article>
+                    <article>
+                        <span class="image">
+                            <img src="../static/aero3.png" alt="" />
+                        </span>
+                        <a href="https://www.youtube.com/watch?v=tK_s2VamE5Q&ab_channel=CarolBorba">
+                            <div class="content"></div>
+                        </a>
+                    </article>
+                    <article>
+                        <span class="image">
+                            <img src="../static/aero4.png" alt="" />
+                        </span>
+                        <a href="https://www.youtube.com/watch?v=gvV2GCW1XMg&ab_channel=FightCamp">
+                            <div class="content"></div>
+                        </a>
+                    </article>
+                </section>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script src="../static/jquery.min.js"></script>
+    <script src="../static/browser.min.js"></script>
+    <script src="../static/breakpoints.min.js"></script>
+    <script src="../static/util.js"></script>
+    <script src="../static/main.js"></script>
+    <script src="{{url_for('static', filename='breapoints.min.js')}}"></script>
+    <script type="text/javascript" href="{{ url_for('static', filename='main.js') }}"></script>
+</body>
+
+
+</html>

@@ -3488,3 +3488,25 @@ body.is-menu-visible #menu .close {
     padding: 0 1.25em;
   }
 }
+
+input[type=date]:required:invalid::-webkit-datetime-edit {
+  color: transparent;
+}
+input[type=date]:focus::-webkit-datetime-edit {
+  color: black !important;
+}
+
+@media screen and (max-width:768px) {
+  img {
+      width:100%;
+  }
+  .container {
+      max-width:100%;
+      width: 100%;
+  }
+  .col-md-3{
+      width:100%;
+      float:left;
+      margin:0;
+  }
+  }

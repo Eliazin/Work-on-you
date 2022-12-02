@@ -5,87 +5,132 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-		<title>Organização work on you</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="../static/main.css" />
-		<noscript><link rel="stylesheet" href="../static/noscript.css" /></noscript>
-	</head>
-	<body class>
-		<!-- Wrapper -->
-			<div id="wrapper">
 
-				<!-- Header -->
-					<header id="header">
-						<div class="inner">
+<head>
+	<title>Organização work on you</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css" />
 
-							<!-- Logo -->
-                            <img src="../static/Logo.png" class="logo" alt="Logo">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
 
-							<!-- Nav -->
-								<nav>
-									<ul>
-										<li><a href="#menu">Menu</a></li>
-									</ul>
-								</nav>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+	<link rel="stylesheet" href="../static/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="../static/noscript.css" />
+	</noscript>
+</head>
 
-						</div>
-					</header>
+<body class>
+	<!-- Wrapper -->
+	<div id="wrapper">
 
-			<!-- Menu -->
-            <nav id="menu">
-                <h2>Menu</h2>
-                <ul>
-					<li><a href="{{url_for('home')}}">Página Inicial</a></li>
-					<li><a href="{{url_for('musicas')}}">Músicas</a></li>
-					<li><a href="{{url_for('exercicios')}}">Exercícios</a></li>
-					<li><a href="{{url_for('filmes')}}">Filmes e séries</a></li>
-					<li><a href="{{url_for('livros')}}">Livros</a></li>
-					<li><a href="{{url_for('mindset')}}">Mindset</a></li>
-					<li><a href="{{url_for('organizacao')}}">Organização</a></li>
-                </ul>
-            </nav>
+		<!-- Header -->
+		<header id="header">
+			<div class="inner">
 
-				<!-- Main -->
-					<div id="main">
-						<div class="inner">
-							<h1>Organização</h1>
-							<span class="image main"><img src="../static/Músicas.jpg" alt="" /></span>
-							<p>Nesta página você encontrará diversas playlists para lhe ajudar a superar suas preocupaç</p>
-							<p></p>
-							<p></p>
-						</div>
-					</div>
+				<!-- Logo -->
+				<img src="../static/Logo.png" class="logo" alt="Logo">
+
+				<!-- Nav -->
+				<nav>
+					<ul>
+						<li><a href="#menu">Menu</a></li>
+					</ul>
+				</nav>
+
+			</div>
+		</header>
+
+		<!-- Menu -->
+		<nav id="menu">
+			<h2>Menu</h2>
+			<ul>
+				<li><a href="{{url_for('home')}}">Página Inicial</a></li>
+				<li><a href="{{url_for('musicas')}}">Músicas</a></li>
+				<li><a href="{{url_for('exercicios')}}">Exercícios</a></li>
+				<li><a href="{{url_for('filmes')}}">Filmes e séries</a></li>
+				<li><a href="{{url_for('livros')}}">Livros</a></li>
+				<li><a href="{{url_for('mindset')}}">Mindfulness</a></li>
+				<li><a href="{{url_for('organizacao')}}">Organização</a></li>
+				<li><a href="{{url_for('alimentacao')}}">Alimentacao</a></li>
+				<li><a href="{{url_for('login')}}">Logout</a></li>
+			</ul>
+		</nav>
+
+		<!-- Main -->
+		<div id="main">
+			<div class="inner">
+				<h1 style="text-align: center; font-weight: bolder; font-size: 80px">Organização</h1>
+				<h1 style="font-size: 40px; font-weight: 50">Com a sua mente e ações organizadas, os efeitos da
+					ansiedade diminuirão
+					de forma perceptiva. Estar em um ambiente organizado e onde as coisas fluem mais facilmente faz com
+					que o seu organismo se concentre te deixando mais focada nas atividade do seu dia a dia.
+				</h1>
+				<hr style=" border-top: 8px solid #bbb; border-radius: 5px;">
+				<div>
+					<h1 style="font-size: 40px; font-weight: 50">
+						É importante listar, enumerar e colocar em datas possíveis. Planejar seu
+						dia e suas tarefas, tudo isso ajuda você a perceber que está em ação, passa a sensação de que
+						você
+						está com as atividades e os pensamentos identificados e sob controle. Estabeleça rotinas e
+						cronogramas diários, mensais e anuais.</h1>
+				</div>
+				<hr style=" border-top: 8px solid #bbb; border-radius: 5px;">
+				<div>
+					<h1 style="text-align: center; font-size: 30px">VAMOS COMEÇAR PELO PLANEJAMENTO DIÁRIO</h1>
+					<h1 style="font-size: 40px; font-weight: 50">Pode ser algo simples, mas identificar e até mesmo
+						listar as tarefas do próximo dia pode
+						contribuir para que você não se sinta ansioso e preocupado com a demanda do ‘amanhã’. Assim você
+						concretiza o que poderia se tornar pensamentos acelerados e um medo excessivo de não dar conta.
+					</h1>
+				</div>
+			</div>
+		</div>
+		<div id="main">
+			<div class="inner">
+				<section class="tiles">
+					<article>
+						<span class="image" style=" position: relative; left: 110%">
+							<a href="{{url_for('planner')}}">
+								<img src="../static/Org.png" alt="" />
+						</span>
+						<h2 style="color: black; margin-top: -130%;  position: relative; left: 125%">Clique para acessar
+							seu planner diário</h2>
+						<div class="content"></div>
+						</a>
+					</article>
+				</section>
 
 				<!-- Footer -->
-					<footer id="footer">
-						<div class="inner">
-							<section class="musica">
-								<h2>Entre em contato</h2>
-								<form method="post" action="#">
-									<div class="fields">
-										<div class="field half">
-											<input type="text" name="name" id="name" placeholder="Nome" />
-										</div>
-										<div class="field half">
-											<input type="email" name="email" id="email" placeholder="Email" />
-										</div>
-										<div class="field">
-											<textarea name="message" id="message" placeholder="Mensagem"></textarea>
-										</div>
-									</div>
-									<ul class="actions">
-										<li><input type="submit" value="Send" class="primary" /></li>
-									</ul>
-								</form>
-							</section>
+				<!-- <footer id="footer">
+			<div class="inner">
+				<section class="musica">
+					<h2>Entre em contato</h2>
+					<form method="post" action="#">
+						<div class="fields">
+							<div class="field half">
+								<input type="text" name="name" id="name" placeholder="Nome" />
+							</div>
+							<div class="field half">
+								<input type="email" name="email" id="email" placeholder="Email" />
+							</div>
+							<div class="field">
+								<textarea name="message" id="message" placeholder="Mensagem"></textarea>
+							</div>
 						</div>
-					</footer>
+						<ul class="actions">
+							<li><input type="submit" value="Send" class="primary" /></li>
+						</ul>
+					</form>
+				</section>
+			</div>
+		</footer> -->
 
 			</div>
 
-		<!-- Scripts -->
+			<!-- Scripts -->
 			<script src="../static/jquery.min.js"></script>
 			<script src="../static/browser.min.js"></script>
 			<script src="../static/breakpoints.min.js"></script>
@@ -93,5 +138,6 @@
 			<script src="../static/main.js"></script>
 			<script src="{{url_for('static', filename='breapoints.min.js')}}"></script>
 			<script type="text/javascript" href="{{ url_for('static', filename='main.js') }}"></script>
-	</body>
+</body>
+
 </html>

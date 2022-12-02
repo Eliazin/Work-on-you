@@ -66,43 +66,82 @@
           <li><a href="{{url_for('exercicios')}}">Exercícios</a></li>
           <li><a href="{{url_for('filmes')}}">Filmes e séries</a></li>
           <li><a href="{{url_for('livros')}}">Livros</a></li>
-          <li><a href="{{url_for('mindset')}}">Mindset</a></li>
+          <li><a href="{{url_for('mindset')}}">Mindfulness</a></li>
           <li><a href="{{url_for('organizacao')}}">Organização</a></li>
+          <li><a href="{{url_for('alimentacao')}}">Alimentacao</a></li>
+          <li><a href="{{url_for('login')}}">Logout</a></li>
         </ul>
       </nav>
       <div id="main">
         <div class="inner">
           <section class="tiles">
-            <article class="style1">
+            <article>
               <span class="image">
                 <img src="../static/Músicas.jpg" alt="" />
               </span>
               <a
-                href="https://open.spotify.com/playlist/2X5BPknxexv0e7DdDKUj0C"
+                href="{{url_for('musicas')}}"
               >
-                <h2>Músicas</h2>
                 <div class="content"></div>
               </a>
             </article>
-            <article class="style2">
+            <article>
               <span class="image">
-                <img src="../static/Exercicio.jpg" alt="" />
+                <img src="../static/home_livros.png" alt="" style="height: 68%;" />
               </span>
               <a
-                href="https://open.spotify.com/playlist/2X5BPknxexv0e7DdDKUj0C"
+                href="{{url_for('livros')}}"
               >
-                <h2>Exercícios</h2>
                 <div class="content"></div>
               </a>
             </article>
-            <article class="style5">
+            <article>
               <span class="image">
                 <img src="../static/filmes.jpg" alt="" />
               </span>
               <a
-                href="https://open.spotify.com/playlist/2X5BPknxexv0e7DdDKUj0C"
+                href="{{url_for('filmes')}}"
               >
-                <h2>Filmes</h2>
+                <div class="content"></div>
+              </a>
+            </article>
+            <article>
+              <span class="image">
+                <img src="../static/home_ex.png" alt="" />
+              </span>
+              <a
+                href="{{url_for('exercicios')}}"
+              >
+                <div class="content"></div>
+              </a>
+            </article>
+            <article>
+              <span class="image">
+                <img src="../static/home_mind.png" alt="" />
+              </span>
+              <a
+                href="{{url_for('mindset')}}"
+              >
+                <div class="content"></div>
+              </a>
+            </article>
+            <article>
+              <span class="image">
+                <img src="../static/home_food.png" alt="" />
+              </span>
+              <a
+                href="{{url_for('alimentacao')}}"
+              >
+                <div class="content"></div>
+              </a>
+            </article>
+            <article>
+              <span class="image">
+                <img src="../static/home_org.png" alt="" />
+              </span>
+              <a
+                href="{{url_for('organizacao')}}"
+              >
                 <div class="content"></div>
               </a>
             </article>

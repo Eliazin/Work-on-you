@@ -1,0 +1,109 @@
+<!-- Store this code in 'index.html' file inside the 'templates' folder-->
+
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Home Page</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}" />
+    <link rel="stylesheet" href="../static/main.css" />
+    <noscript>
+        <link rel="stylesheet" href="{{ url_for('static', filename='noscript.css') }}" />
+    </noscript>
+</head>
+
+<body class="is-touch">
+    <div id="wrapper">
+        <header id="header">
+            <div class="inner">
+                <h1 style="font-size: 80px;">Cardio</h1>
+                <h2 style="font-size: 20px;">O QUE É E PARA QUE SERVE?</h2>
+                <p>Os exercícios cardiovasculares, também conhecidos como cardio, metabólico ou aeróbio são aqueles que
+                    utilizam oxigênio para gerar energia muscular. Eles melhoram o desempenho do coração e a capacidade
+                    cardiorrespiratória, trazendo diversos benefícios para o organismo.</p>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#menu">"Menu"</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <nav id="menu">
+            <h2>Menu</h2>
+            <ul>
+                <li><a href="{{url_for('home')}}">Página Inicial</a></li>
+                <li><a href="{{url_for('musicas')}}">Músicas</a></li>
+                <li><a href="{{url_for('exercicios')}}">Exercícios</a></li>
+                <li><a href="{{url_for('filmes')}}">Filmes e séries</a></li>
+                <li><a href="{{url_for('livros')}}">Livros</a></li>
+                <li><a href="{{url_for('mindset')}}">Mindfulness</a></li>
+                <li><a href="{{url_for('organizacao')}}">Organização</a></li>
+                <li><a href="{{url_for('alimentacao')}}">Alimentacao</a></li>
+                <li><a href="{{url_for('login')}}">Logout</a></li>
+            </ul>
+        </nav>
+        <div id="main">
+            <section style="margin-bottom: 40px;">
+                <div class="card text-left">
+                    <div class="card-body" style="background-color: ccd6b9;">
+                        <h4 class="card-title" style="text-align: center;">Para Iniciantes</h4>
+                        <a href="https://www.youtube.com/watch?v=VWj8ZxCxrYk&ab_channel=MadFit">
+                            <img class="card-img" src="../static/cardio1.png" style="width: 18rem; " /></a>
+                        <a href="https://www.youtube.com/watch?v=PvEnWsPrL4w&ab_channel=BodyProject">
+                            <img class="card-img" src="../static/Cardio2.png"
+                                style="width: 18rem; margin-left: 1200px;" /></a>
+                    </div>
+                </div>
+            </section>
+            <section style="margin-bottom: 40px;">
+                <div class="card text-left">
+                    <div class="card-body" style="background-color: fdf6b1;">
+                        <h4 class="card-title" style="text-align: center;">Iniciante/Intermediário</h4>
+                        <a href="https://www.youtube.com/watch?v=8MImdWV2WfI&ab_channel=BodyProject">
+                            <img class="card-img" src="../static/cardio3.png" style="width: 18rem; " /></a>
+                        <a href="https://www.youtube.com/watch?v=8oQ-WNJoYtM&ab_channel=BodyProject">
+                            <img class="card-img" src="../static/Cardio4.png"
+                                style="width: 18rem; margin-left: 1200px;" /></a>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="card text-left">
+                    <div class="card-body" style="background-color: f2b9b5;">
+                        <h4 class="card-title" style="text-align: center;">Intermediário</h4>
+                        <a href="https://www.youtube.com/watch?v=ZgPWjI-FG24&ab_channel=FitnessType">
+                            <img class="card-img" src="../static/cardio5.png" style="width: 18rem; " /></a>
+                        <a href="https://www.youtube.com/watch?v=WjoBQsoekgk&ab_channel=BodyProject">
+                            <img class="card-img" src="../static/Cardio6.png"
+                                style="width: 18rem; margin-left: 1200px;" /></a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    </div>
+
+    <script src="../static/jquery.min.js"></script>
+    <script src="../static/browser.min.js"></script>
+    <script src="../static/breakpoints.min.js"></script>
+    <script src="../static/util.js"></script>
+    <script src="../static/main.js"></script>
+    <script src="{{url_for('static', filename='breapoints.min.js')}}"></script>
+    <script type="text/javascript" href="{{ url_for('static', filename='main.js') }}"></script>
+</body>
+
+
+</html>

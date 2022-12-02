@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Planner work on you</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link rel="stylesheet" href="../static/main.css" />
+    <noscript>
+        <link rel="stylesheet" href="../static/noscript.css" />
+    </noscript>
+</head>
+
+<body>
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Header -->
+        <header id="header">
+            <div class="inner">
+
+                <!-- Logo -->
+                <img src="../static/Vases.png" class="logo" alt="Logo">
+                <img src="../static/Logo.png" class='logo' style="margin-left: 85%; margin-top: -100%" />
+                <!-- Nav -->
+                <!-- Nav -->
+                <nav>
+                    <ul>
+                        <li><a href="#menu">Menu</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+        </header>
+
+        <!-- Menu -->
+        <nav id="menu">
+            <h2>Menu</h2>
+            <ul>
+                <li><a href="{{url_for('home')}}">Página Inicial</a></li>
+                <li><a href="{{url_for('musicas')}}">Músicas</a></li>
+                <li><a href="{{url_for('exercicios')}}">Exercícios</a></li>
+                <li><a href="{{url_for('filmes')}}">Filmes e séries</a></li>
+                <li><a href="{{url_for('livros')}}">Livros</a></li>
+                <li><a href="{{url_for('mindset')}}">Mindfulness</a></li>
+                <li><a href="{{url_for('organizacao')}}">Organização</a></li>
+                <li><a href="{{url_for('alimentacao')}}">Alimentacao</a></li>
+                <li><a href="{{url_for('login')}}">Logout</a></li>
+              </ul>
+        </nav>
+
+        <!-- Main -->
+        <div id="main">
+            <div class="inner">
+                <h1 style="text-align: center; font-weight: bolder; font-size: 120px">Planner Diário</h1>
+                <div style="text-align: center;">
+                    <label for="data" style="font-weight: 900;">Data:
+                        <input type="date" id="data" required oninput="hide"></label>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div id="main">
+            <div class="inner">
+                <div class="container">
+                    <div class="row">
+                        <div class="card card-text col-md-3"
+                            style="width: 30%; height: 45vh; background-color: darkseagreen; font-size: 40px; margin-right: 20px;">
+                            Objetivo do dia:
+                            <textarea name="Objetivo" id="Objetivo" cols="30" rows="10"
+                                placeholder="Insira os seus objetivos"></textarea>
+                        </div>
+                        <div class="card card-text col-md-3"
+                            style="width: 35%; height: 30vh; position: relative; background-color: #7f977a; font-size: 40px; top: -100%;  margin-right: 20px;">
+                            Urgente:
+                            <textarea name="Urgente" id="Urgente" cols="30" rows="10"
+                                placeholder="Insira o que é urgente"></textarea>
+                        </div>
+                        <div class="card card-body col-md-3"
+                            style="width: 30%; height: 45vh; background-color: #debdb4; font-size: 40px; margin-left: 20px;">
+                            Tarefas do dia:
+                            <textarea name="Tarefa" id="Tarefa" cols="30" rows="10"
+                                placeholder="Insira as suas tarefas"></textarea>
+                        </div>
+                        <div class="card card-body col-md-3"
+                            style="width: 20%; height: 45vh; background-color: #fdf6b1; font-size: 40px; margin-top: 20px;">
+                            Compromissos:
+                            <textarea name="Compromisso" id="Compromisso" cols="30" rows="10"
+                                placeholder="Insira os seus compromissos"></textarea>
+                        </div>
+                        <div class="card card-body col-md-3"
+                        style="width: 20%; height: 45vh; background-color: #f6e6dd; font-size: 40px; margin-left: 20px; margin-top: 20px;">
+                        Anotações:
+                        <textarea name="Anotações" id="Anotações" cols="30" rows="10"
+                            placeholder="Insira suas anotações"></textarea>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Scripts -->
+    <script src="../static/jquery.min.js"></script>
+    <script src="../static/browser.min.js"></script>
+    <script src="../static/breakpoints.min.js"></script>
+    <script src="../static/util.js"></script>
+    <script src="../static/main.js"></script>
+    <script src="{{url_for('static', filename='breapoints.min.js')}}"></script>
+    <script type="text/javascript" href="{{ url_for('static', filename='main.js') }}"></script>
+</body>
+
+</html>

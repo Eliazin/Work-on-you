@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+    <title>Alimentação</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link rel="stylesheet" href="../static/main.css" />
+    <noscript>
+        <link rel="stylesheet" href="../static/noscript.css" />
+    </noscript>
+</head>
+
+<body class>
+    <!-- Wrapper -->
+    <div id="wrapper">
+        <!-- Header -->
+        <header id="header">
+            <div class="inner">
+                <!-- Logo -->
+                <img src="../static/Logo.png" class="logo" alt="Logo" />
+                <img src="../static/Ovo.png" class='logo' style="margin-left: 85%; margin-top: -50%" />
+                <!-- Nav -->
+                <nav>
+                    <ul>
+                        <li><a href="#menu">Menu</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Menu -->
+        <nav id="menu">
+            <h2>Menu</h2>
+            <ul>
+                <li><a href="{{url_for('home')}}">Página Inicial</a></li>
+                <li><a href="{{url_for('musicas')}}">Músicas</a></li>
+                <li><a href="{{url_for('exercicios')}}">Exercícios</a></li>
+                <li><a href="{{url_for('filmes')}}">Filmes e séries</a></li>
+                <li><a href="{{url_for('livros')}}">Livros</a></li>
+                <li><a href="{{url_for('mindset')}}">Mindfulness</a></li>
+                <li><a href="{{url_for('organizacao')}}">Organização</a></li>
+                <li><a href="{{url_for('alimentacao')}}">Alimentacao</a></li>
+                <li><a href="{{url_for('login')}}">Logout</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main -->
+        <div id="main">
+            <div class="inner">
+                <h1 style="text-align: center; font-weight: bolder; font-size: 80px">
+                    Alimentação
+                </h1>
+                <h2 style="text-align: center">
+                    VAMOS FALAR SOBRE A importância da alimentação na busca por uma saúde mental equilibrada?
+                </h2>
+                <hr style=" border-top: 8px solid #bbb; border-radius: 5px;">
+                <h2>
+                    Atualmente, o intestino humano é reconhecido como nosso segundo cérebro, devido à capacidade de
+                    influenciar o funcionamento de diversos órgãos e tecidos corporais. Por isso, a alimentação de
+                    qualidade, aliada a hábitos de vida saudáveis, promove uma saúde mental adequada
+                </h2>
+                <hr style=" border-top: 8px solid #bbb; border-radius: 5px;">
+                <h3>Outro fator importante é que nossos neurônios produzem substâncias chamadas de neurotransmissores,
+                    que são responsáveis por nossos estados emotivos, Uma alimentação que pode melhorar o intestino e,
+                    consequentemente, a saúde mental tem como base alimentos in natura e minimamente processados.</h3>
+                <img src="../static/verde.png" alt="">
+                <button type="button" data-bs-toggle="collapse" data-bs-target="#Floras">Floras Verdes - ver
+                    mais..</button>
+                <h2 class="collapse" id="Floras">As hortaliças verde-escuras (espinafre, brócolis e alface) são
+                    alimentos ricos em folato. Esta
+                    vitamina presente no complexo B está ligada à prevenção de transtornos mentais, incluindo a
+                    depressão. Além disso, na alface, há diversas substâncias nos talos das folhas, principalmente a
+                    lactucina e a lactupicrina, que atuam como calmantes naturais.</h2>
+                <img src="../static/Laranja.png" alt="">
+                <button type="button" data-bs-toggle="collapse" data-bs-target="#Laranja">LARANJA - ver mais..</button>
+                <h2 class="collapse" id="Laranja">Rica em vitamina C, a laranja
+                    garante o bom funcionamento do sistema nervoso e combate à fadiga com
+                    uma boa dose de energia. A vitamina C inibe a liberação de cortisol, o conhecido hormônio do
+                    estresse. </h2>
+                <br>
+                <img src="../static/Fruta.png" alt="">
+                <button type="button" data-bs-toggle="collapse" data-bs-target="#Fruta">FRUTAS - ver mais..</button>
+                <h2 class="collapse" id="Fruta">
+                    Procure comer melancia, abacate, mamão, banana e limão. Essas frutas possuem o aminoácido
+                    triptofano, que ajuda na produção de serotonina. O consumo de três a cinco porções de frutas
+                    diariamente é o mais recomendado. Para facilitar a ingestão, você pode fazer saladas de frutas para
+                    consumir ao longo da semana.</h2>
+                <img src="../static/Mel.png" alt="">
+                <button type="button" data-bs-toggle="collapse" data-bs-target="#Mel">MEL - ver mais..</button>
+                <h2 class="collapse" id="Mel">
+                    Ajuda na produção da serotonina, responsável, como já se sabe, pelo bom humor. Duas colheres ao dia
+                    são suficientes para começar a sentir os efeitos positivos do mel. Além disso, você pode
+                    adicioná-las na sobremesa, nas frutas ou em bebidas.</h2>
+            </div>
+            <br><br>
+            <div id="wrapper">
+                <!-- Header -->
+                <header id="header">
+                    <div class="inner">
+                        <h1 style="text-align: center;">Receitas</h1>
+                    </div>
+                    <div class="card"
+                        style="width: 50%; text-align: end; font-size: 40px; background-color: #f6e6dd; display: inline-block; position: relative; left: 20%; margin-bottom: 20px;">
+                        <img class="card-img-overlay" src="../static/Smoothie.png" style="width: 15rem;" alt=""><br>
+                        <p style="font-size: 30px; text-align: center;">Smoothie
+                            Refrescante de banana com morangofa</p>
+                        <p style="text-align: end;">Ingredientes</p>
+                        <p style="text-align: end; font-size: 20px;">1xícara de leite semidesnatado,<br>
+                            1 banana prata bem madura <br>
+                            3 morangos grandes <br>
+                            1 colher (sopa) de iogurte natural <br>
+                            3 gotas de essência de baunilha <br>
+                            1 colher (chá) de mel
+                        <p style="text-align: end;">Modo de preparo</p>
+                        <p style="text-align: end; font-size: 20px;">Em um liquidificador, junte todos os ingredientes.
+                            Bata até a mistura ficar homogênea. 
+                            Sirva bem gelado
+                            Smoothie é uma ótima opçao refrescante
+                            e deliciosa!
+                        </p>
+                        <p style="text-align: end;">Dica de preparo:</p>
+                        <p style="text-align: end; font-size: 20px;">Pode congelar as frutas um dia antes se quiser
+                        </p>
+                    </div>
+                    <div class="card" 
+                        style="width: 50%; text-align: end; font-size: 40px; background-color: #fdf6b1; display: block; position: relative; left: 20%; margin-bottom: 20px;">
+                        <img class="card-img-overlay" src="../static/Cookie.png" style="width: 15rem;" alt=""><br>
+                        <p style="font-size: 30px; text-align: center;">BISCOITINHOS DE BANANA E AVEIA</p>
+                        <p style="text-align: end;">Ingredientes</p>
+                        <p style="text-align: end; font-size: 20px;">2 bananas prata bem maduras amassadas,<br>
+                            1 de xícara de aveia em flocos <br>
+                            canela a gosto <br></p>
+                        <p style="text-align: end;">Modo de preparo</p>
+                        <p style="text-align: end; font-size: 20px;">Misture todos os ingredientes; Faça
+                            <br>
+                            formatos de biscoito; Polvilhe canela a
+                            gosto por cima. Disponha em um tabuleiro
+                            forrado com papel 
+                            manteiga. Leve ao forno pré-aquecido por 
+                            20 min ou até ficar dourado na parte 
+                            debaixo. Após pronto pode consumir 
+                            também com mel ou geleia
+                            de sua preferência
+                        </p>
+                        <p style="text-align: end;">Rendimento: 9 Biscoitos Médios</p>
+                    </div>
+                    <div class="card" 
+                    style="width: 50%; text-align: end; font-size: 40px; background-color: #d9e7c6; display: block; position: relative; left: 20%;">
+                    <img class="card-img-overlay" src="../static/Pao.png" style="width: 15rem;" alt=""><br>
+                    <p style="font-size: 30px; text-align: center;">PÃO DE QUEIJO DE MANDIOQUINHA</p>
+                    <p style="text-align: end;">Ingredientes</p>
+                    <p style="text-align: end; font-size: 20px;">200g de polvilho azedo;<br>
+                        300g de polvilho doce;<br>
+                        150ml de azeite de oliva;<br>
+                        500g de mandioquinha;<br>
+                        1/2 de xícara de água;<br>
+                        sal;<br>
+                        opcional: chia, alecrim ou outros </p>
+                    <p style="text-align: end;">Modo de preparo</p>
+                    <p style="text-align: end; font-size: 20px;">Cozinhar a mandioquinha em água e fazer um purê. Com a
+                        água que sobrou da mandioquinha medir ½ xícara e aquecer
+                        novamente com o azeite até ferver. Misturar o polvilho
+                        doce, o azedo, sal e ervas em uma tigela grande. Despejar
+                        a água com o óleo ainda quente na tigela e misturar bem.
+                        Acrescentar o purê de mandioquinha e misturar com as mãos
+                        até ficar uma massa homogênea. Pré-aquecer o forno (10
+                        minutos) a 180ºC. Untar com um pouco de óleo, colocar os
+                        pães em uma assadeira e pôr no forno por 20 a 25 minutos.
+                    </p>
+                </div>
+                </header>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <!-- <footer id="footer">
+        <div class="inner">
+          <section class="musica">
+            <h2>Entre em contato</h2>
+            <form method="post" action="#">
+              <div class="fields">
+                <div class="field half">
+                  <input type="text" name="name" id="name" placeholder="Nome" />
+                </div>
+                <div class="field half">
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Email"
+                  />
+                </div>
+                <div class="field">
+                  <textarea
+                    name="message"
+                    id="message"
+                    placeholder="Mensagem"
+                  ></textarea>
+                </div>
+              </div>
+              <ul class="actions">
+                <li><input type="submit" value="Send" class="primary" /></li>
+              </ul>
+            </form>
+          </section>
+        </div>
+      </footer> -->
+    </div>
+
+    <!-- Scripts -->
+    <script src="../static/jquery.min.js"></script>
+    <script src="../static/browser.min.js"></script>
+    <script src="../static/breakpoints.min.js"></script>
+    <script src="../static/util.js"></script>
+    <script src="../static/main.js"></script>
+    <script src="{{url_for('static', filename='breapoints.min.js')}}"></script>
+    <script type="text/javascript" href="{{ url_for('static', filename='main.js') }}"></script>
+</body>
+
+</html>

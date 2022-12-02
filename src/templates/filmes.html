@@ -10,6 +10,9 @@
 	<title>Filmes work on you</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="../static/main.css" />
 	<noscript>
 		<link rel="stylesheet" href="../static/noscript.css" />
@@ -46,9 +49,11 @@
 				<li><a href="{{url_for('exercicios')}}">Exercícios</a></li>
 				<li><a href="{{url_for('filmes')}}">Filmes e séries</a></li>
 				<li><a href="{{url_for('livros')}}">Livros</a></li>
-				<li><a href="{{url_for('mindset')}}">Mindset</a></li>
+				<li><a href="{{url_for('mindset')}}">Mindfulness</a></li>
 				<li><a href="{{url_for('organizacao')}}">Organização</a></li>
-			</ul>
+				<li><a href="{{url_for('alimentacao')}}">Alimentacao</a></li>
+				<li><a href="{{url_for('login')}}">Logout</a></li>
+			  </ul>
 		</nav>
 
 		<!-- Main -->
@@ -62,9 +67,10 @@
 				</h2>
 				</p>
 				<h1 style="text-weight: bold; font-size: 20px; display: inline">
-					1) Reine sobre Mim (2007)
+					<button type="button" data-toggle="collapse" data-target="#R" aria-expanded="false"
+					aria-controls="collapseExample">1) Reine sobre Mim (2007) - ver mais.. </button>
 				</h1>
-				<h1 style="font-size: 20px; font-weight: 50">
+				<h1 style="font-size: 20px; font-weight: 50" class="collapse" id="R">
 					Estamos acostumados a ver o Adam Sandler em seus inúmeros filmes de comédia, mas em Reine Sobre Mim
 					ele surpreende vivendo o depressivo Charlie Finema. É impossível não se emocionar com a sua atuação.
 
@@ -74,9 +80,10 @@
 					ter sentido.
 				</h1>
 				<h1 style="text-weight: bold; font-size: 20px; display: inline">
-					2) Veronika Decide Morrer (2009)
+					<button type="button" data-toggle="collapse" data-target="#V" aria-expanded="false"
+					aria-controls="collapseExample">2) Veronika Decide Morrer (2009) - ver mais.. </button>
 				</h1>
-				<h1 style="font-size: 20px; font-weight: 50">
+				<h1 style="font-size: 20px; font-weight: 50" class="collapse" id="V">
 					Este filme sobre depressão é uma adaptação do livro do escritor brasileiro Paulo Coelho. Em sua
 					história, acompanhamos Veronika, interpretada pela atriz Sarah Michelle Gellar, uma jovem que vive
 					aparentemente uma vida perfeita: é bonita, tem seu apartamento em Nova York e um ótimo emprego,
@@ -87,9 +94,10 @@
 					gostaria de aproveitar da melhor maneira o tempo de vida que lhe resta.
 				</h1>
 				<h1 style="text-weight: bold; font-size: 20px; display: inline">
-					3) Se enlouquecer, não se apaixone (2010)
+					<button type="button" data-toggle="collapse" data-target="#P" aria-expanded="false"
+					aria-controls="collapseExample">3) Se enlouquecer, não se apaixone (2010) - ver mais.. </button>
 				</h1>
-				<h1 style="font-size: 20px; font-weight: 50">
+				<h1 style="font-size: 20px; font-weight: 50" class="collapse" id="P">
 					Apesar de ser um filme sobre depressão e suicídio, Se enlouquecer, não se apaixone aborda o assunto
 					com muita leveza.
 
@@ -104,9 +112,10 @@
 					descobre que tudo tem o seu tempo e o quanto é valioso apreciar cada momento.
 				</h1>
 				<h1 style="text-weight: bold; font-size: 20px; display: inline">
-					4) As vantagens de ser invisível (2012)
+					<button type="button" data-toggle="collapse" data-target="#Logan" aria-expanded="false"
+					aria-controls="collapseExample">4) As vantagens de ser invisível (2012) ver mais.. </button>
 				</h1>
-				<h1 style="font-size: 20px; font-weight: 50">
+				<h1 style="font-size: 20px; font-weight: 50" class="collapse" id="Logan">
 					Com um elenco maravilhoso composto por Logan Lerman, Emma Watson e Ezra Miller, As vantagens de ser
 					invisível é um filme que aborda a depressão na adolescência com muita sensibilidade.
 					Embarcamos na história de Charlie, interpretado por Logan, um jovem solitário e traumatizado, que
@@ -119,9 +128,10 @@
 					é importante se sentir parte de um grupo e um lugar.
 				</h1>
 				<h1 style="text-weight: bold; font-size: 20px; display: inline">
-					5) Divertida Mente (2015)
+					<button type="button" data-toggle="collapse" data-target="#Diver" aria-expanded="false"
+						aria-controls="collapseExample">5) Divertida Mente (2015) ver mais..</button>
 				</h1>
-				<h1 style="font-size: 20px; font-weight: 50">
+				<div style="font-size: 20px; font-weight: 50" class="collapse" id="Diver">
 					Mais uma animação da Pixar que conquista crianças e adultos com sucesso, Divertida Mente ilustra de
 					forma lúdica e bem didática como funcionam as nossas emoções.
 					Ao longo do filme, nos aventuramos pela mente da Riley, uma adolescente que além de passar por todos
@@ -131,12 +141,12 @@
 					vemos cada vez mais sentido na história e associamos ela a realidade.
 
 					É um filme maravilhoso que traz diversão e reflexão de forma leve.
-				</h1>
+				</div>
 			</div>
 		</div>
 
 		<!-- Footer -->
-		<footer id="footer">
+		<!-- <footer id="footer">
 			<div class="inner">
 				<section class="musica">
 					<h2>Entre em contato</h2>
@@ -158,7 +168,7 @@
 					</form>
 				</section>
 			</div>
-		</footer>
+		</footer> -->
 
 	</div>
 
